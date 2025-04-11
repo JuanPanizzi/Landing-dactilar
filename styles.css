@@ -38,7 +38,8 @@ nav {
     align-items: center;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 4rem 0;
+    /* padding: 4rem 0; */
+    height: 20vh;
 }
 
 
@@ -67,9 +68,9 @@ nav {
 
 /* Hero Section */
 .hero {
-    min-height: 60vh;
+    min-height: 80vh;
     display: flex;
-    align-items: center;
+    align-items: start;
     padding: 2rem;
     /* background: linear-gradient(135deg, var(--primary-color) 0%, var(--background-color) 100%); */
     position: relative;
@@ -80,7 +81,7 @@ nav {
    
     display: flex;
     /* justify-content: space-between; */
-    margin: auto;
+    margin: 0  auto;
     /* background-color: red; */
     max-width: 1300px;
     width: 100%;
@@ -100,7 +101,7 @@ nav {
 }
 
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1.2;
     margin: 0;
@@ -109,9 +110,9 @@ nav {
 }
 
 .hero-text p {
-    font-size: 1.25rem;
+    font-size: 2rem;
     line-height: 1.6;
-    margin: 0;
+    margin: 10px 0;
     color: var(--text-color);
 }
 
