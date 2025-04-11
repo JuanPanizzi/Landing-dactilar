@@ -342,6 +342,10 @@ nav {
     color: var(--text-color);
     text-decoration: none;
     border-radius: 5px;
+    max-width: 200px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
