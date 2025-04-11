@@ -117,6 +117,7 @@ nav {
 .services h2 {
     text-align: center;
     margin-bottom: 3rem;
+    font-size: 2rem;
     color: var(--accent-color);
 }
 
