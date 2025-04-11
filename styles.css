@@ -186,10 +186,10 @@ nav {
     margin-bottom: 3rem;
     color: var(--accent-color);
     font-size: 2.5rem;
-    background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
+    /* background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px rgba(0, 206, 201, 0.3);
+    -webkit-text-fill-color: transparent; */
+    /* text-shadow: 0 0 20px rgba(0, 206, 201, 0.3); */
 }
 
 .tech-grid {
