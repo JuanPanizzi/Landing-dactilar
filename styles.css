@@ -23,13 +23,13 @@ body {
 
 /* Header Styles */
 header {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     padding: 1rem;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); */
 }
 
 nav {
@@ -41,14 +41,12 @@ nav {
     padding: 0 1rem;
 }
 
-.logo h1 {
-    color: var(--accent-color);
-    font-size: 1.8rem;
-}
+
 
 .nav-links {
     display: flex;
     gap: 2rem;
+    font-size: 1.2rem;
 }
 
 .nav-links a {
@@ -79,13 +77,18 @@ nav {
 }
 
 .hero-content {
-    max-width: 800px;
+    font-size: 1.2rem;
+    text-align: left;
+    max-width: 1200px;
+    /* background-color: red; */
+    margin:auto
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--accent-color);
+    font-weight: bold;
 }
 
 .hero p {
