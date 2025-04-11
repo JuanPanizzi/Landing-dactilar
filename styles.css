@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
     --primary-color: #2d3436;
     --secondary-color: #0984e3;
@@ -6,19 +8,21 @@
     --background-color: #1e272e;
     --card-background: #2d3436;
     --hover-color: #00b894;
+    --font-primary: 'Poppins', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-primary);
 }
 
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+    font-weight: 400;
 }
 
 /* Header Styles */
@@ -42,18 +46,18 @@ nav {
     height: 20vh;
 }
 
-
-
 .nav-links {
     display: flex;
     gap: 2rem;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .nav-links a {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
+    letter-spacing: 0.5px;
 }
 
 .nav-links a:hover {
@@ -103,17 +107,20 @@ nav {
 .hero-text h1 {
     font-size: 5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
     margin: 0;
     color: var(--accent-color);
-    /* text-shadow: 0 0 20px rgba(0, 206, 201, 0.3); */
+    letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
 .hero-text p {
     font-size: 2rem;
-    line-height: 1.6;
+    line-height: 1.4;
     margin: 10px 0;
     color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 .hero-animation {
@@ -314,11 +321,11 @@ nav {
     }
 
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .hero-text p {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .hero-animation {
@@ -365,6 +372,8 @@ nav {
     margin-bottom: 3rem;
     font-size: 3rem;
     color: var(--accent-color);
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 .services-grid {
@@ -428,12 +437,15 @@ nav {
     color: var(--accent-color);
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .service-card p {
     color: var(--text-color);
     font-size: 1.1rem;
     line-height: 1.6;
+    font-weight: 300;
 }
 
 /* About Section */
@@ -447,11 +459,15 @@ nav {
     margin: 0 auto;
     text-align: center;
     font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.8;
 }
 
 .about h2 {
     color: var(--accent-color);
     margin-bottom: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 /* Technologies Section */
@@ -479,10 +495,8 @@ nav {
     margin-bottom: 3rem;
     color: var(--accent-color);
     font-size: 2.5rem;
-    /* background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* text-shadow: 0 0 20px rgba(0, 206, 201, 0.3); */
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 .tech-grid {
@@ -543,12 +557,15 @@ nav {
     color: var(--accent-color);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .tech-card p {
     color: var(--text-color);
     font-size: 1rem;
     line-height: 1.6;
+    font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -574,6 +591,8 @@ nav {
     text-align: center;
     margin-bottom: 3rem;
     color: var(--accent-color);
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 .contact-form {
@@ -589,6 +608,9 @@ nav {
     border-radius: 5px;
     background-color: var(--card-background);
     color: var(--text-color);
+    font-family: var(--font-primary);
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 .contact-form textarea {
@@ -631,6 +653,8 @@ footer {
 .footer-section h3 {
     color: var(--accent-color);
     margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .social-links {
