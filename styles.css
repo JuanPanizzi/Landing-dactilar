@@ -362,15 +362,16 @@ nav {
 
 /* Services Section */
 .services {
-    padding: 5rem 1rem;
     max-width: 1300px;
     margin: 0 auto;
+    padding: 0 1rem;
+    height: 60vh;
 }
 
 .services h2 {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
     color: var(--accent-color);
     font-weight: 600;
     letter-spacing: -0.5px;
