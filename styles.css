@@ -36,7 +36,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 4rem 0;
 }
@@ -77,27 +77,21 @@ nav {
 }
 
 .hero-content {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* gap: 4rem; */
-    /* align-items: center; */
+   
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin: auto;
     /* background-color: red; */
-
-    max-width: 1500px;
+    max-width: 1300px;
     width: 100%;
-    margin: 0 auto;
-    /* padding: 2rem; */
-    /* position: relative; */
-    /* z-index: 2; */
+    
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     /* background: rgba(45, 52, 54, 0.7); */
     /* backdrop-filter: blur(10px); */
     /* border-radius: 15px; */
@@ -122,11 +116,10 @@ nav {
 }
 
 .hero-animation {
-    width: 100%;
+    width: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    width: 100%;
     height: 100%;
     min-height: 400px;
     position: relative;
@@ -136,7 +129,7 @@ nav {
     width: 100%;
     max-width: 300px;
     height: auto;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 50px;
     box-shadow: 0 0 30px rgba(0, 206, 201, 0.3);
     transition: transform 0.3s ease;
@@ -312,6 +305,7 @@ nav {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+        
     }
 
     .hero-text {
@@ -357,7 +351,7 @@ nav {
 /* Services Section */
 .services {
     padding: 5rem 1rem;
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -458,7 +452,7 @@ nav {
 /* Technologies Section */
 .technologies {
     padding: 5rem 1rem;
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     position: relative;
 }
@@ -619,7 +613,7 @@ footer {
 
 .footer-content {
     /* background-color: #00b894; */
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
@@ -726,4 +720,4 @@ footer {
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-  }
+} 
