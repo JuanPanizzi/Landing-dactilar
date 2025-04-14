@@ -454,27 +454,83 @@ nav {
 
 /* About Section */
 .about {
-    padding: 5rem 1rem;
-    /* background-color: var(--primary-color); */
+    padding: 8rem 1rem;
     margin: 200px auto;
-
+    position: relative;
+    max-width: 1300px;
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.4rem;
-    font-weight: 300;
-    line-height: 1.8;
+    position: relative;
 }
 
 .about h2 {
     color: var(--accent-color);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 4.5rem;
     letter-spacing: -0.5px;
+    position: relative;
+    display: inline-block;
+}
+
+.about h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+.about-content p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.about-content p::before,
+.about-content p::after {
+    content: '"';
+    font-size: 4rem;
+    color: var(--accent-color);
+    opacity: 0.3;
+    position: absolute;
+    font-family: serif;
+}
+
+.about-content p::before {
+    top: -20px;
+    left: 0;
+}
+
+.about-content p::after {
+    bottom: -40px;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 4rem 1rem;
+    }
+    
+    .about h2 {
+        font-size: 3.5rem;
+    }
+    
+    .about-content p {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+    }
 }
 
 /* Technologies Section */
@@ -824,7 +880,7 @@ footer {
     position: relative;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 3rem 0
+    padding: 3rem 0;
 }
 
 .clients-track {
