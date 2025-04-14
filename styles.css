@@ -317,6 +317,9 @@ nav {
         text-align: center;
         
     }
+    .hero-gif {
+        min-width: 200px;
+    }
 
     .hero-text {
         padding: 1.5rem;
@@ -845,38 +848,16 @@ footer {
     .footer-bottom {
         font-size: 1rem;
     }
+    .tech-more {
+        margin-top: 3rem;
+        padding: 2rem 0;
+    }
+
+    .tech-more p {
+        font-size: 2rem;
+    }
 } 
-@-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-  }
-  
-  .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
+
 /* Clients Slider Styles */
 .clients {
     padding: 4rem 0;
@@ -994,19 +975,64 @@ footer {
     transform: translateY(-50%);
 }
 
-@media (max-width: 768px) {
-    .tech-more {
-        margin-top: 3rem;
-        padding: 2rem 0;
+
+@media (max-width: 576px) { 
+    
+    .hero-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
-    .tech-more p {
-        font-size: 2rem;
+    .hero-animation {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    .hero-gif {
+        width: 30%;
+    }
+    
 }
+
 
 @media (max-width: 480px) {
     .tech-more p {
         font-size: 1.8rem;
     }
-} 
+}
+
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;   
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
