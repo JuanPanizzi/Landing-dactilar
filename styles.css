@@ -374,7 +374,7 @@ nav {
 .services h2 {
     text-align: center;
     margin-bottom: 150px;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: var(--accent-color);
     font-weight: 600;
     letter-spacing: -0.5px;
@@ -557,7 +557,7 @@ nav {
     text-align: center;
     margin-bottom: 120px;
     color: var(--accent-color);
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
     letter-spacing: -0.5px;
 }
