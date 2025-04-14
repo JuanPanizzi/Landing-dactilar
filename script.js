@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
 
     menuToggle.addEventListener('click', () => {
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        navLinks.classList.toggle('active');
     });
 
     // Smooth scrolling for navigation links
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 // Close mobile menu if open
                 if (window.innerWidth <= 768) {
-                    navLinks.style.display = 'none';
+                    navLinks.classList.remove('active');
                 }
             }
         });
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth <= 768 && 
             !e.target.closest('.nav-links') && 
             !e.target.closest('.menu-toggle')) {
-            navLinks.style.display = 'none';
+            navLinks.classList.remove('active');
         }
     });
 
@@ -44,4 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+
+    // Cerrar el menú cuando se hace clic en un enlace
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+        });
+    });
 }); 
