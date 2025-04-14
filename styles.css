@@ -645,7 +645,18 @@ footer {
     background-color: var(--primary-color);
     padding: 3rem 1rem 1rem;
 }
+.footer-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.footer-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition: all 0.5s ease;
 
+}
 .footer-content {
     /* background-color: #00b894; */
     max-width: 1300px;
@@ -788,4 +799,83 @@ footer {
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+
+/* Clients Slider Styles */
+.clients {
+    padding: 4rem 0;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    margin: 200px auto;
+}
+
+.clients h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--accent-color);
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.clients-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.clients-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: max-content;
+}
+
+.client-logo {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 100px;
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(45, 52, 54, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 206, 201, 0.1);
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 206, 201, 0.2);
+    border-color: var(--accent-color);
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0.8);
+    transition: all 0.3s ease;
+}
+
+.client-logo img:hover {
+    filter: grayscale(0%) brightness(1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover */
+.clients-slider:hover .clients-track {
+    animation-play-state: paused;
 } 
