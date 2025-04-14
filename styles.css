@@ -455,7 +455,7 @@ nav {
 /* About Section */
 .about {
     padding: 5rem 1rem;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     margin: 200px auto;
 
 }
