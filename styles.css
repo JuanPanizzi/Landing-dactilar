@@ -373,7 +373,7 @@ nav {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 1rem;
-    max-height: 80vh;
+    /* max-height: 80vh; */
     /* background-color: var(--primary-color); */
     margin-bottom: 100px;
 }
