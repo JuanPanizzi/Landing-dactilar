@@ -719,21 +719,6 @@ nav {
 }
 
 @media (max-width: 576px) {
-    
-    /* Header */
-    header {
-        padding: 0 1rem;
-    }
-    /* Fin Header */
-    
-    .hero{
-        padding: 0;
-    }
-    .hero-content{
-        margin: 0;
-        gap: 0;
-    }
-
     .about {
         padding: 3rem 1rem;
         margin: 80px auto;
@@ -747,7 +732,24 @@ nav {
     .about-content p {
         font-size: 1.2rem;
         line-height: 1.5;
-        padding: 0 0.5rem;
+        padding: 0 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .about-content p::before,
+    .about-content p::after {
+        font-size: 3rem;
+        opacity: 0.2;
+    }
+
+    .about-content p::before {
+        top: -25px;
+        left: -5px;
+    }
+
+    .about-content p::after {
+        bottom: -35px;
+        right: -5px;
     }
 }
 
