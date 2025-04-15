@@ -1046,7 +1046,7 @@ footer {
     .nav-links {
         display: none;
         position: absolute;
-        top: 63%;
+        top: 7%;
         right: 0;
         background-color: var(--primary-color);
         padding: 1rem;
