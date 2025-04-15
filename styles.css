@@ -796,25 +796,10 @@ footer {
     background-color: var(--primary-color);
     padding: 3rem 1rem 1rem;
 }
-.footer-link {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 1.2rem;
-}
-.footer-link:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-    transition: all 0.5s ease;
 
-}
 .footer-content {
-    /* background-color: #00b894; */
     max-width: 1300px;
     margin: 0 auto;
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-    /* gap: 2rem; */
     display: flex;
     justify-content: space-between;
     padding: 2rem;
@@ -837,21 +822,17 @@ footer {
     font-weight: 300;
 }
 
-.social-links {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.social-links a {
+.footer-link {
     color: var(--text-color);
-    font-size: 1.8rem;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
-.social-links a:hover {
+.footer-link:hover {
     color: var(--accent-color);
-    transform: translateY(-3px);
+    text-decoration: underline;
+    transition: all 0.5s ease;
 }
 
 .footer-bottom {
@@ -864,19 +845,78 @@ footer {
     font-weight: 300;
 }
 
-
 @media (max-width: 1200px) {
-       /* Servicios */
-       .services-grid {
-        grid-template-columns: repeat(2, 1fr);   
+    .footer-content {
+        padding: 1.5rem;
     }
-    
-    .services h2 {
-        font-size: 3.5rem;
-        margin-bottom: 100px;
-    }
-    /* Fin servicios */
 
+    .footer-section h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .footer-section p,
+    .footer-link {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 80px;
+        padding: 2rem 1rem 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-section p,
+    .footer-link {
+        font-size: 1rem;
+    }
+
+    .footer-bottom {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        margin-top: 60px;
+        padding: 1.5rem 1rem 1rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-section p,
+    .footer-link {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        font-size: 0.9rem;
+    }
 }
 
 /* Responsive Design */
