@@ -428,7 +428,7 @@ nav {
 
     .cta-button {
         padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+        font-size: 0.8rem !important;
         margin: 0.5rem auto;
     }
 }
@@ -436,19 +436,39 @@ nav {
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: transparent;
+    color: var(--accent-color);
     text-decoration: none;
     border-radius: 5px;
     max-width: 200px;
     text-align: center;
     font-size: 1.1rem;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+    z-index: -1;
 }
 
 .cta-button:hover {
-    background-color: var(--hover-color);
+    color: var(--text-color);
+}
+
+.cta-button:hover::before {
+    width: 100%;
 }
 
 /* Services Section */
