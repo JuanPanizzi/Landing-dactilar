@@ -561,6 +561,21 @@ nav {
 }
 
 @media (max-width: 576px) {
+    
+    /* Header */
+    header {
+        padding: 0 1rem;
+    }
+    /* Fin Header */
+    
+    .hero{
+        padding: 0;
+    }
+    .hero-content{
+        margin: 0;
+        gap: 0;
+    }
+
     .about {
         padding: 3rem 1rem;
         margin: 80px auto;
