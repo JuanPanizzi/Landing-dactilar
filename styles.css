@@ -1058,7 +1058,10 @@ footer {
     }
 
     .nav-links.active {
-        display: flex;
+        display: block;
+        line-height: 2;
+        text-align: right;
+        font-size: 0.9rem;
     }
 
     .nav-links a {
