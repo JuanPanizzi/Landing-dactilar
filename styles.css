@@ -1013,6 +1013,70 @@ footer {
     filter: grayscale(0%) brightness(1);
 }
 
+@media (max-width: 1200px) {
+    .clients {
+        margin: 150px auto;
+    }
+
+    .clients h2 {
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .client-logo {
+        width: 180px;
+        height: 90px;
+        margin: 0 1.5rem;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .clients {
+        padding: 3rem 0;
+        margin: 100px auto;
+    }
+
+    .clients h2 {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .clients-slider {
+        padding: 2rem 0;
+    }
+
+    .client-logo {
+        width: 150px;
+        height: 75px;
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .clients {
+        padding: 2rem 0;
+        margin: 80px auto;
+    }
+
+    .clients h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .clients-slider {
+        padding: 1.5rem 0;
+    }
+
+    .client-logo {
+        width: 120px;
+        height: 60px;
+        margin: 0 0.8rem;
+        padding: 0.8rem;
+    }
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
