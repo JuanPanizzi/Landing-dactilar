@@ -805,8 +805,22 @@ footer {
     font-weight: 300;
 }
 
+
+@media (max-width: 1200px) {
+       /* Servicios */
+       .services-grid {
+        grid-template-columns: repeat(2, 1fr);   
+    }
+    /* Fin servicios */
+
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+
+
+ 
+
     .menu-toggle {
         display: block;
     }
@@ -1004,6 +1018,15 @@ footer {
 
 
 @media (max-width: 576px) { 
+
+    /* Servicios */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hero */
+
+
     
     .hero-content{
         display: flex;
