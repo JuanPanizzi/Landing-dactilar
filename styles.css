@@ -376,44 +376,44 @@ nav {
 
     .hero-content {
         margin: 0;
-        gap: 0.5rem;
+        gap: 0;
         height: 100%;
         justify-content: center;
     }
 
     .hero-text {
-        padding: 1rem;
-    }
-
-    .hero-text h1 {
-        font-size: 2.2rem;
-        line-height: 1.2;
-    }
-
-    .hero-text p {
-        font-size: 1.1rem;
-        margin: 1rem 0;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 1rem;
     }
 
     .hero-animation {
         min-height: auto;
-        height: 40%;
+        height: 30%;
         display: flex;
         align-items: flex-end;
         margin-bottom: 0;
-    }
-
-    .hero-text {
-        height: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        padding-bottom: 0;
     }
 
     .hero-gif {
         max-width: 180px;
         border-radius: 30px;
         padding: 0.8rem;
+        margin-bottom: -2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-top: -1rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        margin: 1rem 0;
     }
 
     .cta-button {
