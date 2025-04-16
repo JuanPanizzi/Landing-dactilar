@@ -1422,7 +1422,12 @@ footer {
     .tech-more p {
         font-size: 1.8rem;
     }
+    .nav-links.active {
+        max-width: 93px;
+        font-size: 0.6rem;
+    }
 }
+
 
 
 @-webkit-keyframes fadeIn {
