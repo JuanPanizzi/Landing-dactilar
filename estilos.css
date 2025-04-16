@@ -1502,3 +1502,98 @@ footer {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } 
+
+@media (max-width: 1200px) {
+    .clients {
+        margin: 150px auto;
+    }
+
+    .clients h2 {
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .client-logo {
+        width: 200px;
+        height: 100px;
+        margin: 0 1.5rem;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .clients {
+        margin: 120px auto;
+    }
+
+    .clients h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .client-logo {
+        width: 180px;
+        height: 90px;
+        margin: 0 1.2rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .clients {
+        padding: 3rem 0;
+        margin: 100px auto;
+    }
+
+    .clients h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .clients-slider {
+        padding: 2rem 0;
+    }
+
+    .client-logo {
+        width: 150px;
+        height: 75px;
+        margin: 0 1rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .clients {
+        padding: 2rem 0;
+        margin: 80px auto;
+    }
+
+    .clients h2 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .clients-slider {
+        padding: 1.5rem 0;
+    }
+
+    .client-logo {
+        width: 120px;
+        height: 60px;
+        margin: 0 0.8rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .clients h2 {
+        font-size: 1.8rem;
+    }
+
+    .client-logo {
+        width: 100px;
+        height: 50px;
+        margin: 0 0.6rem;
+        padding: 0.5rem;
+    }
+} 
