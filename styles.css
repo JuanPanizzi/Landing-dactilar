@@ -1428,7 +1428,12 @@ footer {
     }
 }
 
-
+@media (max-width: 355px) {
+    .cta-button {
+        overflow: visible;
+        padding: 0.5rem 1rem;
+    }
+}
 
 @-webkit-keyframes fadeIn {
     from {
