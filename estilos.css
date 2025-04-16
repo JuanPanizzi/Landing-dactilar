@@ -1405,6 +1405,10 @@ footer {
 
 
 @media (max-width: 576px) { 
+    
+    .logo-afip{ 
+        max-width: 70px;
+    }
 
     /* Servicios */
     .services-grid {
@@ -1504,7 +1508,12 @@ footer {
     animation-fill-mode: both;
 } 
 
+.logo-afip{
+    max-width: 100px;
+}
 @media (max-width: 1200px) {
+
+
     .clients {
         margin: 150px auto;
     }
@@ -1541,6 +1550,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .footer-content{
+        flex-direction: column-reverse;
+    }
+    .logo-afip{
+        max-width: 70px;
+    }
     .clients {
         padding: 3rem 0;
         margin: 100px auto;
