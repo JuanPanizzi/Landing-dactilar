@@ -549,6 +549,19 @@ nav {
     color: var(--accent-color);
     font-weight: 600;
     letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.services h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
 }
 
 .services-grid {
@@ -785,6 +798,19 @@ nav {
     font-size: 4.5rem;
     font-weight: 600;
     letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.technologies h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
 }
 
 .tech-grid {
@@ -1211,9 +1237,30 @@ footer {
 /* Clients Slider Styles */
 .clients {
     padding: 4rem 0;
-    background-color: var(--primary-color);
+    background: linear-gradient(180deg, rgba(45, 52, 54, 0.1) 0%, rgba(45, 52, 54, 0.05) 100%);
     overflow: hidden;
     margin: 200px auto;
+    position: relative;
+}
+
+.clients::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 206, 201, 0.3), transparent);
+}
+
+.clients::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 206, 201, 0.3), transparent);
 }
 
 .clients h2 {
@@ -1223,6 +1270,19 @@ footer {
     font-size: 4rem;
     font-weight: 600;
     letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.clients h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
 }
 
 .clients-slider {
@@ -1240,7 +1300,6 @@ footer {
     width: max-content;
 }
 
-
 .client-logo {
     flex: 0 0 auto;
     width: 250px;
@@ -1255,6 +1314,25 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 206, 201, 0.2);
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.client-logo::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 16px;
+    /* background: linear-gradient(45deg, transparent, rgba(0, 206, 201, 0.1), transparent); */
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.client-logo:hover::before {
+    opacity: 1;
 }
 
 .client-logo:hover {
@@ -1262,7 +1340,6 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 206, 201, 0.2);
     border-color: var(--accent-color);
 }
-
 
 .client-logo img {
     max-width: 100%;
@@ -1272,74 +1349,6 @@ footer {
     background: white;
     padding: 0.5rem;
     border-radius: 8px;
-}
-
-.client-logo img:hover {
-    transform: scale(1.05);
-}
-
-@media (max-width: 1200px) {
-    .clients {
-        margin: 150px auto;
-    }
-
-    .clients h2 {
-        font-size: 3.5rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .client-logo {
-        width: 180px;
-        height: 90px;
-        margin: 0 1.5rem;
-        padding: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .clients {
-        padding: 3rem 0;
-        margin: 100px auto;
-    }
-
-    .clients h2 {
-        font-size: 2.8rem;
-        margin-bottom: 2rem;
-    }
-
-    .clients-slider {
-        padding: 2rem 0;
-    }
-
-    .client-logo {
-        width: 150px;
-        height: 75px;
-        margin: 0 1rem;
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .clients {
-        padding: 2rem 0;
-        margin: 80px auto;
-    }
-
-    .clients h2 {
-        font-size: 2.2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .clients-slider {
-        padding: 1.5rem 0;
-    }
-
-    .client-logo {
-        width: 120px;
-        height: 60px;
-        margin: 0 0.8rem;
-        padding: 0.8rem;
-    }
 }
 
 @keyframes scroll {
