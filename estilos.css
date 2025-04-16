@@ -1237,7 +1237,8 @@ footer {
 /* Clients Slider Styles */
 .clients {
     padding: 4rem 0;
-    background: linear-gradient(180deg, rgba(45, 52, 54, 0.1) 0%, rgba(45, 52, 54, 0.05) 100%);
+    background-color: var(--card-background);
+    /* background: linear-gradient(180deg, rgba(45, 52, 54, 0.1) 0%, rgba(45, 52, 54, 0.05) 100%); */
     overflow: hidden;
     margin: 200px auto;
     position: relative;
@@ -1274,7 +1275,7 @@ footer {
     padding-bottom: 1rem;
 }
 
-.clients h2::after {
+/* .clients h2::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1283,7 +1284,7 @@ footer {
     width: 100px;
     height: 3px;
     background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
-}
+} */
 
 .clients-slider {
     width: 100%;
