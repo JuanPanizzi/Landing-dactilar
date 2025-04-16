@@ -1447,6 +1447,16 @@ footer {
     }
 }
 
+@media (max-width: 355px) {
+.nav-links.active{
+    max-width: 73px;
+    font-size: 0.4rem;
+}
+}
+
+
+
+
 @-webkit-keyframes fadeIn {
     from {
       opacity: 0;
